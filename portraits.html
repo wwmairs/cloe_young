@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
+    <title>Cloe Young</title>
     <!-- TODO: favicon -->
     <!-- bootstrap css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -14,7 +14,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- TODO: check in about font -->
     <!-- Roboto -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,200,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i ,200,400,700" rel="stylesheet">
     <link href="style.css" rel="stylesheet"/>
 </head>
 
@@ -37,32 +37,23 @@
             </h2>
         </div>
     </div>
-    <div class="content">
-        <div class="row">
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <!-- portraits and self portraits -->
-                <div class="preview">
-                    <img src="images/cloe.webp" alt="portraits">
-                    <a href="portraits.html">
-                        <p>portraits</p>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <!-- current work -->
-                <div class="preview">
-                    <img src="images/cloe.webp" alt="current">
-                    <a href="current.html">
-                        <p>current</p>
-                    </a>
-                </div>
-            </div>
-        </div>
+    <div id="slide-box" class="content">
+        <img id="s0" class="slide" src="images/portraits/main.webp" height="100%">
+        <img class="slide" src="images/portraits/main.webp" height="100%">
+        <img class="slide" src="images/portraits/main.webp" height="100%">
+        <img class="slide" src="images/portraits/main.webp" height="100%">
+        <a class="slide" id="back-button" href="#s0">
+            <p href="#s0">back</p>
+        </a>
     </div>
     <footer>
-        <p>COPYRIGHT &copy; CLOE YOUNG 2017
+        <p>COPYRIGHT &copy; CLOE YOUNG 2017</p>
+        <p id="by">site by wwmairs</p>
     </footer>
 </div>
 </body>
-
+<script>
+$('#slide-box').css('height', $(window).height() - 200);
+// slidebox height = .height - 220px
+</script>
 </html>

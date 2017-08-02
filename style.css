@@ -43,8 +43,6 @@ body{
     margin-top: 25px;
 }
 
-#bio{
-}
 
 footer{
     padding-top: 20px;
@@ -63,6 +61,10 @@ footer{
     width: 75%;
 }
 
+/**************************************
+* work.html links
+**************************************/
+
 .preview {
     height: 500px;
     width: 100%;
@@ -76,6 +78,8 @@ footer{
     left: 0;
     top: 0;
     z-index: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .preview a{
@@ -88,11 +92,21 @@ footer{
 }
 
 .preview a p {
+    font-family: 'Courier New', sans-serif;
     display: none;
-    color: black;
+    color: white;
+    text-align: center;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    margin: auto;
+    width: 45%;
+    background-color: rgb(140, 140, 140);
+    border-radius: 1px;
+    /*border: 1px solid black;*/
+    font-weight: 100;
+    font-style: italic;
+    font-size: 24px;
 }
 
 .preview a:hover{
@@ -104,6 +118,9 @@ footer{
     display: block;
 }
 
+/**************************************
+* contact ish
+**************************************/
 
 .contact-info {
     font-weight: 100;
@@ -114,4 +131,40 @@ footer{
     color: black;
     /*font-style: normal;*/
     font-family: 'Courier New', sans-serif;
+}
+
+/**************************************
+* slides
+**************************************/
+#slide-box {
+    margin: auto;
+    width:100%;
+    overflow: auto;
+    white-space: nowrap;
+    /*padding: 10px;*/
+}
+
+.slide {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+#back-button{
+    padding-right: 10px;
+    width: 200px;
+}
+
+#back-button p{
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    color: black;
+    font-family: 'Courier New', sans-serif;
+    text-decoration: none;
+}
+
+#slide-box a:hover{
+    text-decoration: none;
 }
