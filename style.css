@@ -52,6 +52,10 @@ footer{
     font-family: 'Courier New', sans-serif;
 }
 
+#by{
+    font-size: 10px;
+}
+
 .container-fluid{
     padding: 0;
 }
