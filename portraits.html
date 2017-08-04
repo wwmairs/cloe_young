@@ -38,10 +38,8 @@
         </div>
     </div>
     <div id="slide-box" class="content">
-        <img id="s0" class="slide" src="images/portraits/main.webp" height="100%">
-        <img class="slide" src="images/portraits/main.webp" height="100%">
-        <img class="slide" src="images/portraits/main.webp" height="100%">
-        <img class="slide" src="images/portraits/main.webp" height="100%">
+        <!-- <img id="s0" class="slide" src="images/portraits/0.webp" height="100%"> -->
+        <!-- <img class="slide" src="images/portraits/0.webp" height="100%"> -->
         <a class="slide" id="back-button" href="#s0">
             <p href="#s0">back</p>
         </a>
@@ -54,6 +52,21 @@
 </body>
 <script>
 $('#slide-box').css('height', $(window).height() - 200);
+function getSlides(dir, ext, count) {
+    console.log('in function, count = ' + count);
+    path = dir + count + ext
+    console.log('trying ' + path);
+    $.get(path, function(data){
+        console.log('found ' + path);
+        $("#slide-box").prepend("<img class='slide' src='"+ path+ "' height='100%'>");
+        getSlides(dir, ext, count + 1);
+    })
+    .fail(function() {
+        console.log("that's all");
+    });
+}
+getSlides('images/portraits/', '.webp', 0);
+
 // slidebox height = .height - 220px
 </script>
 </html>
