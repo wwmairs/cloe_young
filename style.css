@@ -84,6 +84,7 @@ footer{
     z-index: 1;
     padding-top: 10px;
     padding-bottom: 10px;
+    object-fit: cover;
 }
 
 .preview a{
