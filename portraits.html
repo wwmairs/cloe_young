@@ -57,7 +57,7 @@ function getSlides(dir, ext, count) {
     console.log('trying ' + path);
     $.get(path, function(data){
         console.log('found ' + path);
-        $("#slide-box").prepend("<img class='slide' src='"+ path+ "' height='100%'>");
+        $("#slide-box").append("<img class='slide' src='"+ path+ "' height='100%'>");
         getSlides(dir, ext, count + 1);
     })
     .fail(function() {
