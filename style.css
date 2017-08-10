@@ -148,7 +148,7 @@ footer{
     overflow: auto;
     white-space: nowrap;
     /*padding: 10px;*/
-    display: none;
+    /*display: none;*/
 }
 
 #loading {
