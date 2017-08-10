@@ -50,6 +50,7 @@
         <p id="by">site by <a href='http://wwmairs.com:82'>wwmairs</a></p>
     </footer>
 </div>
+</body>
 <script>
 $('#slide-box').css('height', $(window).height() - 200);
 function getSlides(dir, ext, count) {
@@ -62,10 +63,10 @@ function getSlides(dir, ext, count) {
         $("#slide-box").append("<a class='slide' id='back-button' href='portfolio.html'><p href='#s0'>back</p> </a>");
         $("#loading").css("display", "none");
         $("#slide-box").css("display", "inline");
+        $(".slide").css("display", "inline-block");
     });
 }
 getSlides('images/portraits/', '.jpg', 0);
 </script>
-</body>
 
 </html>
