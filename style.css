@@ -31,16 +31,19 @@ body{
 
 #menu h1{
     font-weight: 700;
-    font-size: 50px;
+    font-size: 45px;
+    letter-spacing: 2px;
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 
 #menu h2{
-    font-weight: 100;
-    font-style: italic;
-    font-size: 24px;
-    margin-top: 25px;
+    font-weight: 200;
+    font-family: 'Courier New', sans-serif;
+    letter-spacing: 1px;
+    /*font-style: italic;*/
+    font-size: 28px;
+    margin-top: 15px;
 }
 
 
@@ -110,7 +113,7 @@ footer{
     border-radius: 1px;
     /*border: 1px solid black;*/
     font-weight: 100;
-    font-style: italic;
+    /*font-style: italic;*/
     font-size: 24px;
 }
 
@@ -129,7 +132,7 @@ footer{
 
 .contact-info {
     font-weight: 100;
-    font-style: italic;
+    /*font-style: italic;*/
 }
 
 .contact-info a{
