@@ -37,15 +37,13 @@
             </h2>
         </div>
     </div>
+    <div id="loading" class="content">
+        <h2>loading...</h2>
+    </div>
     <div id="slide-box" class="content">
-        <div id="loading">
-            <h2>loading...</h2>
-        </div>
-        <!-- <img id="s0" class="slide" src="images/portraits/0.webp" height="100%"> -->
-        <!-- <img class="slide" src="images/portraits/0.webp" height="100%"> -->
-        <a class="slide" id="back-button" href="portfolio.html">
+<!--         <a class="slide" id="back-button" href="portfolio.html">
             <p href="#s0">back</p>
-        </a>
+        </a> -->
     </div>
     <footer>
         <p>COPYRIGHT &copy; CLOE YOUNG 2017</p>
@@ -61,8 +59,9 @@ function getSlides(dir, ext, count) {
         getSlides(dir, ext, count + 1);
     })
     .fail(function() {
+        $("#slide-box").append("<a class='slide' id='back-button' href='portfolio.html'><p href='#s0'>back</p> </a>");
         $("#loading").css("display", "none");
-        $(".slide").css("display", "block");
+        $("#slide-box").css("display", "block");
     });
 }
 getSlides('images/portraits/', '.jpg', 0);

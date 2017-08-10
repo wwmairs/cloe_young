@@ -148,6 +148,7 @@ footer{
     overflow: auto;
     white-space: nowrap;
     /*padding: 10px;*/
+    display: none;
 }
 
 #loading {
@@ -159,7 +160,6 @@ footer{
 .slide {
     display: inline-block;
     padding-left: 10px;
-    display: none;
 }
 
 #back-button{
