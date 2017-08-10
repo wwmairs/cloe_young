@@ -141,6 +141,7 @@ footer{
 /**************************************
 * slides
 **************************************/
+
 #slide-box {
     margin: auto;
     width:100%;
@@ -149,9 +150,16 @@ footer{
     /*padding: 10px;*/
 }
 
+#loading {
+    display: inline-block;
+    padding-left: 10px;
+    height: 100%;
+}
+
 .slide {
     display: inline-block;
     padding-left: 10px;
+    display: none;
 }
 
 #back-button{

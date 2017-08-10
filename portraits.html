@@ -38,6 +38,9 @@
         </div>
     </div>
     <div id="slide-box" class="content">
+        <div id="loading">
+            <h2>loading...</h2>
+        </div>
         <!-- <img id="s0" class="slide" src="images/portraits/0.webp" height="100%"> -->
         <!-- <img class="slide" src="images/portraits/0.webp" height="100%"> -->
         <a class="slide" id="back-button" href="portfolio.html">
@@ -52,16 +55,14 @@
 <script>
 $('#slide-box').css('height', $(window).height() - 200);
 function getSlides(dir, ext, count) {
-    console.log('in function, count = ' + count);
     path = dir + count + ext
-    console.log('trying ' + path);
     $.get(path, function(data){
-        console.log('found ' + path);
         $("#slide-box").append("<img class='slide' src='"+ path+ "' height='100%'>");
         getSlides(dir, ext, count + 1);
     })
     .fail(function() {
-        console.log("that's all");
+        $("#loading").css("display", "none");
+        $(".slide").css("display", "block");
     });
 }
 getSlides('images/portraits/', '.jpg', 0);
