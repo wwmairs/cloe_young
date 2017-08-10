@@ -1,0 +1,5 @@
+#!/bin/bash
+#an update script
+git add .
+git commit -m "updating photos"
+git push origin master
