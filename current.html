@@ -62,7 +62,7 @@ function getSlides(dir, ext, count) {
     .fail(function() {
         $("#slide-box").append("<a class='slide' id='back-button' href='portfolio.html'><p href='#s0'>back</p> </a>");
         $("#loading").css("display", "none");
-        $("#slide-box").css("display", "inline");
+        $("#slide-box").css("display", "block");
         $(".slide").css("display", "inline-block");
     });
 }
