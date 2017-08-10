@@ -37,9 +37,9 @@
             </h2>
         </div>
     </div>
-    <div id="loading" class="content">
+<!--     <div id="loading" class="content">
         <h2>loading...</h2>
-    </div>
+    </div> -->
     <div id="slide-box" class="content">
 <!--         <a class="slide" id="back-button" href="portfolio.html">
             <p href="#s0">back</p>
@@ -61,7 +61,7 @@ function getSlides(dir, ext, count) {
     })
     .fail(function() {
         $("#slide-box").append("<a class='slide' id='back-button' href='portfolio.html'><p href='#s0'>back</p> </a>");
-        $("#loading").css("display", "none");
+        // $("#loading").css("display", "none");
         // $("#slide-box").css("display", "block");
         // $(".slide").css("display", "inline-block");
     });
