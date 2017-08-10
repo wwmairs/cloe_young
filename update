@@ -1,5 +1,6 @@
 #!/bin/bash
 #an update script
+cd /Users/William/Desktop/cloe_young
 git add .
 git commit -m "updating photos"
 git push origin master
