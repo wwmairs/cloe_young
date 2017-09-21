@@ -7,17 +7,21 @@ body{
     width: 90%;
     margin-top: 30px;
     margin-bottom: 30px;
-    border-bottom: 1px solid black;
+    /*border-bottom: 1px solid black;*/
 }
 
 #menu a{
     color: black;
 }
+
 #menu a:hover{
     border-radius: 2px;
-    background: black;
-    color: white;
+    /*background: black;*/
+    /*color: white;*/
     text-decoration: none;
+    /*border-bottom: 1px dashed black;*/
+    /*border-right: 1px dashed black;*/
+    /*box-shadow: 3px 3px 0px 0px;*/
 }
 
 #menu h2{
@@ -30,8 +34,8 @@ body{
 }
 
 #menu h1{
-    font-weight: 700;
-    font-size: 45px;
+    font-weight: 400;
+    font-size: 38px;
     letter-spacing: 2px;
     margin: 0;
     margin-bottom: 0px;
@@ -39,10 +43,10 @@ body{
 
 #menu h2{
     font-weight: 200;
-    font-family: 'Courier New', sans-serif;
-    letter-spacing: 1px;
+    /*font-family: 'Courier New', sans-serif;*/
+    letter-spacing: 4px;
     /*font-style: italic;*/
-    font-size: 28px;
+    font-size: 20px;
     margin-top: 15px;
 }
 
@@ -51,12 +55,12 @@ footer{
     padding-top: 20px;
     font-weight: 200;
     text-align: center;
-    font-size: 12px;
+    font-size: 11px;
     font-family: 'Courier New', sans-serif;
 }
 
 #by{
-    font-size: 10px;
+    font-size: 9px;
 }
 
 .container-fluid{
@@ -67,6 +71,16 @@ footer{
     margin: auto;
     width: 75%;
 }
+
+/**************************************
+* bio.html
+**************************************/
+
+#bio{
+    font-weight: 300;
+    /*padding-bottom: 40px;*/
+}
+
 
 /**************************************
 * work.html links
@@ -100,7 +114,8 @@ footer{
 }
 
 .preview a p {
-    font-family: 'Courier New', sans-serif;
+    /*font-family: 'Courier New', sans-serif;*/
+    letter-spacing: 7px;
     display: none;
     color: white;
     text-align: center;
@@ -178,7 +193,9 @@ footer{
     margin: auto;
     width: 50%;
     color: black;
-    font-family: 'Courier New', sans-serif;
+    /*font-family: 'Courier New', sans-serif;*/
+    font-weight: 100;
+    letter-spacing: 2px;
     text-decoration: none;
 }
 
