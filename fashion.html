@@ -16,6 +16,12 @@
     <!-- Roboto -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i ,200,400,700" rel="stylesheet">
     <link href="style.css" rel="stylesheet"/>
+    <style>
+    ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+    }
+    </style>
 </head>
 
 <body>
@@ -40,10 +46,12 @@
 <!--     <div id="loading" class="content">
         <h2>loading...</h2>
     </div> -->
-    <div id="slide-box" class="content">
+    <div id="slide-box0" class="content">
 <!--         <a class="slide" id="back-button" href="portfolio.html">
             <p href="#s0">back</p>
         </a> -->
+    </div>
+    <div id="slide-box1" class="content">
     </div>
     <footer>
         <p>COPYRIGHT &copy; CLOE YOUNG 2017</p>
@@ -51,21 +59,35 @@
 </div>
 </body>
 <script>
-$('#slide-box').css('height', $(window).height() - 200);
-function getSlides(dir, ext, count) {
-    path = dir + count + ext
+$('#slide-box0').css('height', $(window).height());
+$('#slide-box1').css('height', $(window).height());
+function getSlides(dir, ext, count, box) {
+
+    boxname = '#slide-box' + box;
+    path = dir + count + ext;
+    img = "<img class='slide' src='"+ path+ "' height='100%'>"
     $.get(path, function(data){
-        $("#slide-box").append("<img class='slide' src='"+ path+ "' height='100%'>");
-        getSlides(dir, ext, count + 1);
+        if (count == 0) {
+            $(boxname).append("<div id='photo-description-container'>");
+            $(boxname).append(img);
+            $(boxname).append("<p id='photo-description' top='" + (($(window).height() * box) + 200) + "''>SampleDescription</p></div>");
+        } else {
+            $(boxname).append(img);
+        }
+        getSlides(dir, ext, count + 1, box);
     })
     .fail(function() {
-        $("#slide-box").append("<a class='slide' id='back-button' href='portfolio.html'><p href='#s0'>back</p> </a>");
+        $(boxname).append("<a class='slide' id='back-button' href='portfolio.html'><p href='#s0'>back</p> </a>");
+        if (boxname == "#slide-box0") {
+            getSlides('images/fashion/1/', '.jpg', 0, 1);
+        }
         // $("#loading").css("display", "none");
         // $("#slide-box").css("display", "block");
         // $(".slide").css("display", "inline-block");
     });
 }
-getSlides('images/fashion/', '.jpg', 0);
+getSlides('images/fashion/0/', '.jpg', 0, 0);
+
 </script>
 
 </html>

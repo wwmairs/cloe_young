@@ -160,7 +160,17 @@ footer{
 * slides
 **************************************/
 
-#slide-box {
+#slide-box0 {
+    margin: auto;
+    /*margin-bottom: 10px;*/
+    width:100%;
+    overflow: auto;
+    white-space: nowrap;
+    /*padding: 10px;*/
+    /*display: none;*/
+}
+
+#slide-box1 {
     margin: auto;
     width:100%;
     overflow: auto;
@@ -179,6 +189,16 @@ footer{
     display: inline-block;
     padding-left: 10px;
     /*height: 100%;*/
+}
+
+#photo-description-container{
+    position: relative;
+}
+
+#photo-description{
+    position: absolute;
+    left: 10px;
+    width: 100%;
 }
 
 #back-button{
