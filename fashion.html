@@ -67,13 +67,13 @@ function getSlides(dir, ext, count, box) {
     path = dir + count + ext;
     img = "<img class='slide' src='"+ path+ "' height='100%'>"
     $.get(path, function(data){
-        if (count == 0) {
+        // if (count == 0) {
             // $(boxname).append("<div id='photo-description-container'>");
             // $(boxname).append(img);
             // $(boxname).append("<p id='photo-description' top='" + (($(window).height() * box) + 200) + "''>SampleDescription</p></div>");
-        } else {
+        // } else {
             $(boxname).append(img);
-        }
+        // }
         getSlides(dir, ext, count + 1, box);
     })
     .fail(function() {
