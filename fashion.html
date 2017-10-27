@@ -68,9 +68,9 @@ function getSlides(dir, ext, count, box) {
     img = "<img class='slide' src='"+ path+ "' height='100%'>"
     $.get(path, function(data){
         if (count == 0) {
-            $(boxname).append("<div id='photo-description-container'>");
-            $(boxname).append(img);
-            $(boxname).append("<p id='photo-description' top='" + (($(window).height() * box) + 200) + "''>SampleDescription</p></div>");
+            // $(boxname).append("<div id='photo-description-container'>");
+            // $(boxname).append(img);
+            // $(boxname).append("<p id='photo-description' top='" + (($(window).height() * box) + 200) + "''>SampleDescription</p></div>");
         } else {
             $(boxname).append(img);
         }

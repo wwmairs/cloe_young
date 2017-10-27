@@ -160,6 +160,16 @@ footer{
 * slides
 **************************************/
 
+#slide-box {
+    margin: auto;
+    /*margin-bottom: 10px;*/
+    width:100%;
+    overflow: auto;
+    white-space: nowrap;
+    /*padding: 10px;*/
+    /*display: none;*/
+}
+
 #slide-box0 {
     margin: auto;
     /*margin-bottom: 10px;*/
