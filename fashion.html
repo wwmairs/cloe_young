@@ -59,8 +59,13 @@
 </div>
 </body>
 <script>
-$('#slide-box0').css('height', $(window).height());
-$('#slide-box1').css('height', $(window).height());
+if ($(window).width() >= 800 ) {
+    $('#slide-box0').css('height', $(window).height());
+    $('#slide-box1').css('height', $(window).height());
+} else {
+    $('#slide-box0').css('height', $(window).height() / 2);
+    $('#slide-box1').css('height', $(window).height() / 2);   
+}
 function getSlides(dir, ext, count, box) {
 
     boxname = '#slide-box' + box;
