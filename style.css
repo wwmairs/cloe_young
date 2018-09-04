@@ -1,5 +1,8 @@
+@import url("plex/font.css");
+
 body{
-    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'ibm_plex_monolight';
 }
 
 #menu {
